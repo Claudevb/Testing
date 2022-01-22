@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+
+    <link rel="stylesheet" href="scoreKeeper.css">
+    <title>Score Keeper</title>
+</head>
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <img class="image" src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+
+                    <header class="card-header title is-4">
+                      <p class="card-header-title">
+                        Ping Pong Pow
+                      </p>
+                    </header>
+
+                    <div class="card-content">
+                      <div class="content">
+                        <h1 class="title is-1 score"><span id="p1ScoreDisplay">0</span> to <span id="p2ScoreDisplay">0</span></h1>
+                        <p class="subtitle">Use buttons below to keep score</p>
+
+                        <div>
+                            <label for="winningScoreSelector" class="label is-large is-inline">Play to</label>
+                            <div class="select is-primary is-rounded">
+                                <select id="winningScoreSelector">
+                                    <option value="3">3</option>
+                                    <option value="5">5</option>
+                                    <option value="11">11</option>
+                                    <option value="21">21</option>
+                                    <option value="unlimited">Unlimited</option>
+                                </select>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+
+                    <footer class="card-footer">
+                        <button id="p1Button" class="is-dark button card-footer-item is-large" >+1 Player One</button>
+                        <button id="p2Button" class="is-dark button card-footer-item is-large" >+1 Player Two</button>
+                        <button id="resetButton" class="is-dark button card-footer-item  is-large">Reset</button>                  
+                    </footer>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <script src="scoreKeeper.js"></script>
+</body>
+</html>
